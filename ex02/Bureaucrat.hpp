@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 16:19:07 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 17:45:58 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/27 19:12:09 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 
 #include <exception>
 
-#include "Form.hpp"
+#include "AForm.hpp"
 
-class Form;
+class AForm;
 
 class Bureaucrat
 {
@@ -50,7 +50,7 @@ public:
 			virtual const char* what() const throw();
 	};
 
-	void signForm(Form &form) const;
+	void signForm(AForm &form) const;
 };
 
 std::ostream &operator<<(std::ostream &out, const Bureaucrat &instance);

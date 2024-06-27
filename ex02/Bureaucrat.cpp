@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 17:24:37 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 18:29:30 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/27 19:11:29 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ std::ostream &operator<<(std ::ostream &out, const Bureaucrat &instance){
 	return(out);
 }
 
-void Bureaucrat::signForm(Form &form) const{
+void Bureaucrat::signForm(AForm &form) const{
 	try {
 		form.beSigned (*this);
 		if (form.isFormSigned() == true)

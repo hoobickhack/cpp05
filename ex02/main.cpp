@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 18:32:03 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 18:31:44 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/27 19:11:43 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ int main()
 	try {
         Bureaucrat signatory("John", 40);
         std::cout << signatory << std::endl;
-        Form form1("Form1", 50, 25);
+        AForm form1("Form1", 50, 25);
         std::cout << form1 << std::endl;
 
         signatory.signForm(form1);
@@ -95,7 +95,7 @@ int main()
     try {
         Bureaucrat signatory("Doe", 9);
         std::cout << signatory << std::endl;
-        Form form2("Form2", 30, 10);
+        AForm form2("Form2", 30, 10);
         std::cout << form2 << std::endl;
 
         signatory.signForm(form2);
