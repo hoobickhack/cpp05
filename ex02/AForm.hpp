@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 19:08:25 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 19:26:17 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/28 15:44:45 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,12 @@ public:
 	};
 
 	class GradeTooLowException : public std ::exception
+	{
+		public:
+			virtual const char* what() const throw();
+	};
+
+	class SignedException : public std ::exception
 	{
 		public:
 			virtual const char* what() const throw();

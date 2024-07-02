@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 19:40:40 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 19:13:29 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/28 15:45:43 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,6 +63,10 @@ const char* AForm::GradeTooHighException::what() const throw(){
 
 const char* AForm::GradeTooLowException::what() const throw(){
 	return("Grade to Low");
+}
+
+const char* AForm::SignedException::what() const throw(){
+	return("Form not signed");
 }
 
 std::ostream &operator<<(std::ostream &out, const AForm &instance){

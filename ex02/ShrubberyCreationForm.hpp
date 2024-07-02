@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/27 19:16:18 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 20:15:55 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/06/28 15:20:15 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,4 @@ class ShrubberyCreationForm : public AForm
 		~ShrubberyCreationForm();
 
 		void execute(Bureaucrat const &executor) const;	
-}
-
+};

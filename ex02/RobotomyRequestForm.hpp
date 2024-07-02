@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PresidentialPardonForm.hpp                         :+:      :+:    :+:   */
+/*   RobotomyRequestForm.hpp                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/02 16:57:07 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/07/02 16:59:58 by isouaidi         ###   ########.fr       */
+/*   Created: 2024/07/02 15:27:33 by isouaidi          #+#    #+#             */
+/*   Updated: 2024/07/02 16:51:45 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,17 @@
 
 #include "AForm.hpp"
 
-class PresidentialPardonForm : public AForm
-{
+class RobotomyRequestForm : public AForm{
 	private:
 		std::string target;
-	public:
-		PresidentialPardonForm();
-		PresidentialPardonForm(const std::string target);
-		PresidentialPardonForm(const PresidentialPardonForm &instance);
-		PresidentialPardonForm& operator=(const PresidentialPardonForm &instance);
-		~PresidentialPardonForm();
 
-		void execute(Bureaucrat const &executor) const;	
+	public:
+	RobotomyRequestForm();
+	RobotomyRequestForm(const std::string target);
+	RobotomyRequestForm(const RobotomyRequestForm &instance);
+	RobotomyRequestForm& operator=(const RobotomyRequestForm &instance);
+	~RobotomyRequestForm();
+
+	void execute(Bureaucrat const &executor) const;
+
 };
