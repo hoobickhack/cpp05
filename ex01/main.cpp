@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 18:32:03 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 18:31:44 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/07/03 17:04:08 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int main()
     std::cout << std::endl;
 
     try {
-        Bureaucrat signatory("Doe", 9);
+        Bureaucrat signatory("Doe", 29);
         std::cout << signatory << std::endl;
         Form form2("Form2", 30, 10);
         std::cout << form2 << std::endl;

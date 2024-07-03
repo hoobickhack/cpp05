@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/26 19:40:40 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/06/27 18:25:31 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/07/03 15:56:50 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int Form::getGradeToExecute()const{
 }
 
 void Form::beSigned(const Bureaucrat &bureau){
-	if (bureau.getGrade() <= this->gradeToExecute)
+	if (bureau.getGrade() <= this->gradeTosign)
 		this->isSigned = true;
 	else
 		throw Form::GradeTooLowException();
